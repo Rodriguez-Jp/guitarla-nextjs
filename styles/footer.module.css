@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--black);
   padding: 5rem 0;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 @media (min-width: 768px) {
