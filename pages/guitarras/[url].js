@@ -3,7 +3,7 @@ import Image from "next/image";
 import Layout from "@/components/layout";
 import styles from "@/styles/guitarras.module.css";
 
-export default function Producto({ guitarra }) {
+export default function Producto({ guitarra, agregarCarrito }) {
   const { nombre, descripcion, imagen, precio } = guitarra[0].attributes;
   const [cantidad, setCantidad] = useState(0);
 
@@ -25,7 +25,7 @@ export default function Producto({ guitarra }) {
       cantidad,
     };
 
-    console.log(guitarraObjeto);
+    agregarCarrito(guitarraObjeto);
   };
 
   return (
