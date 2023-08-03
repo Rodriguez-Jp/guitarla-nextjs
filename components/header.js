@@ -11,7 +11,7 @@ export default function Header() {
       <div className={`contenedor ${styles.barra}`}>
         <Link href={"/"}>
           <Image
-            src="http://localhost:3000/img/logo.svg"
+            src="/img/logo.svg"
             width={300}
             height={40}
             alt="Imagen Logotipo"
